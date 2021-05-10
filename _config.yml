@@ -37,7 +37,7 @@ excerpt_separator: <!-- more -->
 # Includes an icon in the footer for each username you enter
 footer-links:
   #weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
-  behance: www.nb666.net
+  #behance: www.nb666.net
   dribbble:
   #zhihu: abcde
   email: wujun728@hotmail.com
@@ -55,7 +55,7 @@ footer-links:
   youtube:
 
 # Text under the icons in footer
-footer-text: Copyright (c) 2019 lemon
+footer-text: Copyright (c) 2019 Github
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
