@@ -1,37 +1,36 @@
-## Wujun GitHub Pages
+---
+layout: default
+title: Git @ OSC Blog
+tagline: 管理你的代码，协作、共享
+---
+{% include JB/setup %}
 
-You can use the [editor on GitHub](https://github.com/wujun728/wujun728.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+<div class="row-fluid">
+  <div class="span8">
+    <h3>Posts</h3>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li class="icon-calendar">
+          <span class="date">[{{ post.date | date: "%Y-%m-%d" }}]</span>
+          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+          <span class="ds-thread-count" data-thread-key="{{ post.id }}"></span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="span3 pull-right">
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments unstyled" data-num-items="10"></ul>
+  </div>
+</div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wujun728/wujun728.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
